@@ -60,6 +60,7 @@ Each entry is either:
 
 
 (defun unity-shaders/init-shader-mode()
+  ;; 根据打开文件的后缀开启shader-mode
   (add-to-list 'auto-mode-alist '("\\.cginc\\'" . shader-mode))
   (add-to-list 'auto-mode-alist '("\\.shader\\'" . shader-mode))
   (add-to-list 'auto-mode-alist '("\\.compute\\'" . shader-mode))
